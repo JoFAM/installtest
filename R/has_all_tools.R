@@ -16,7 +16,7 @@ has_all_tools <- function(debug = FALSE){
 
   installed <- rownames(installed.packages())
 
-  needs <- c("roxygen2", "pkgbuild", "devtools")
+  needs <- c("roxygen2", "pkgbuild", "devtools", "remotes")
 
   pkgs <- all( needs %in% installed)
   tools <- pkgbuild::has_build_tools()
